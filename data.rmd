@@ -91,6 +91,8 @@ There are two additional tags that are important for documenting datasets:
 
 Never `@export` a data set.
 
+Data documentation for each data within package should be placed in `R/package_name.R` file.
+
 ## Internal data {#data-sysdata}
 
 Sometimes functions need pre-computed data tables. If you put these in `data/` they'll also be available to package users, which is not appropriate. Instead, you can save them in `R/sysdata.rda`. For example, two coloured related packages, [munsell](https://github.com/cwickham/munsell) and [dichromat](http://cran.r-project.org/web/packages/dichromat/index.html), use `R/sysdata.rda` to store large tables of colour data.
